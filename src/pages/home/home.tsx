@@ -11,9 +11,9 @@ export const Home = () => {
       <Intro />
       <SobreNos />
       <Cursos />
-      <Mapa />
+      {/* <Mapa />
       <Duvidas />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

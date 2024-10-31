@@ -33,6 +33,7 @@ export const TipoCurso = styled.button`
   text-align: center;
   font-size: 25px;
   font-weight: 600;
+  cursor: pointer;
   &:hover {
     background-color: #32A5D4;
   }
