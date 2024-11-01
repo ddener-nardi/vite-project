@@ -7,13 +7,13 @@ export const CorpoDocentePage = () => {
     const[list, setList] = useState<CorpoDocente[]>([]);
 
     useEffect(() =>{
-        fetch("https://infoeste-2024-m3s0pw0a8-lukapbs-projects.vercel.app", {method: "get"})
+        fetch("https://infoeste-back-end-fm89.vercel.app/", {method: "get"})
         .then((response) => response.json())
         .then((value: {corpoDocente: CorpoDocente[]})=>{
             setList(value.corpoDocente)
         })
     }, []);
-    const renderProfessorList = () => {
+    const renderProfessorList = () => 
         list
         .sort((a,b) => {
             if(a.nome > b.nome){
@@ -40,6 +40,6 @@ export const CorpoDocentePage = () => {
                     <ProfessorWrapper>{renderProfessorList()}</ProfessorWrapper>
                 </TitleWrapper>
             </MainWrapper>
-        );
-    }
+        )
+
 }
