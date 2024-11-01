@@ -13,7 +13,7 @@ export const Home = () => {
       <Cursos />
       <Mapa />
       <Duvidas />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
